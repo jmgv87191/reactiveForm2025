@@ -29,7 +29,7 @@ export class SideMenu {
   }]
 
   countryMenu: MenuItem[] = [{
-    title:'Paises', route: './country'
+    title:'Países', route: './country'
   }]
 
 }

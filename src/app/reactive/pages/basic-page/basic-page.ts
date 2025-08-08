@@ -14,8 +14,8 @@ export class BasicPage {
 
   myForm = this.fb.group({
     name: ["",[Validators.required, Validators.minLength(3)]]  ,
-    price: [0, Validators.required]  ,
-    inStorage: [0, Validators.required]  ,
+    price: [0, [Validators.required, Validators.min(10)]]  ,
+    inStorage: [0, [Validators.required, Validators.min(0)]]  ,
   })
 
 }

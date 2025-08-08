@@ -89,6 +89,15 @@
         <span>Value</span>
         <pre>{{ myForm.value | json }}</pre>
 
+        <span>Error name</span>
+        <pre>{{ myForm.controls.name.errors| json }}</pre>
+
+        <span>Error price</span>
+        <pre>{{ myForm.controls.price.errors| json }}</pre>
+
+        <span>Error stock</span>
+        <pre>{{ myForm.controls.inStorage.errors| json }}</pre>
+
         <span>Precio</span>
         <pre>{{ myForm.controls.price.value| json }}</pre>
 

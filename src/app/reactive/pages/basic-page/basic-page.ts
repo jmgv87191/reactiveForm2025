@@ -13,7 +13,7 @@ export class BasicPage {
   private fb = inject(FormBuilder)
 
   myForm = this.fb.group({
-    name: ["",Validators.required]  ,
+    name: ["",[Validators.required, Validators.minLength(3)]]  ,
     price: [0, Validators.required]  ,
     inStorage: [0, Validators.required]  ,
   })

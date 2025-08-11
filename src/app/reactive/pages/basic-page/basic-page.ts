@@ -18,4 +18,16 @@ export class BasicPage {
     inStorage: [0, [Validators.required, Validators.min(0)]]  ,
   })
 
+
+  onSave(){
+    this.myForm.markAllAsTouched()
+
+    console.log( this.myForm.value )
+
+    this.myForm.reset()
+  }
+
+
 }
+
+

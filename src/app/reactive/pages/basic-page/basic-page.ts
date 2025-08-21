@@ -20,11 +20,18 @@ export class BasicPage {
 
 
   onSave(){
-    this.myForm.markAllAsTouched()
 
+    if (this.myForm.invalid) {
+      this.myForm.markAllAsTouched()
+      return;
+    }
+
+    
     console.log( this.myForm.value )
+    
+      
+      this.myForm.reset()
 
-    this.myForm.reset()
   }
 
 

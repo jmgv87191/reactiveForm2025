@@ -122,3 +122,22 @@
         <pre>{{ myForm.controls.name.value| json }}</pre>
     </div>
 </div>
+
+    const area = expressions[0];
+    const perimeter = expressions[1];
+    const resultadoParcial = Math.sqrt(perimeter * perimeter - 16 * area )
+    
+    const s1 = perimeter + resultadoParcial
+    const s2 = perimeter - resultadoParcial
+    
+    return [s1,s2].sort( (a,b)=> a - b )
+
+
+    const area = expressions[0];
+    const perimeter = expressions[1];
+
+    const disc = Math.sqrt(perimeter * perimeter - 16 * area);
+    const s1 = (perimeter - disc) / 4;
+    const s2 = (perimeter + disc) / 4;
+    
+    return [s1, s2].sort((a, b) => a - b);
